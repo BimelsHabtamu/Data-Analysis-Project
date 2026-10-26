@@ -109,24 +109,46 @@ To resolve these issues, management commissioned this analysis to answer **ten c
 ---
 
 ## 🖥️ Visualization & Interactive Dashboard
-The interactive Microsoft Excel performance dashboard serves as an executive cockpit, synthesizing high-volume patient data into intuitive visual components.
+To empower executive stakeholders with versatile reporting options, two tailored executive dashboard layouts were designed in Microsoft Excel: **Dashboard One (Classic Executive Layout)** and **Dashboard Two (Icon-Enhanced Modern Executive Layout)**. Both dashboards reflect identical underlying metrics from the 1,000 patient records, offering flexible arrangements for clinical and board presentations.
 
-![Hospital Performance Dashboard Screenshot](./Dashboard_Image.png)
+### 📌 Dashboard One: Classic Executive Layout (Secure Life General Hospital)
+![Dashboard One - Classic Executive Layout](./Dashboard_One.png)
 
-### Key Dashboard Components & Architecture
+* **Design Focus:** High-readability executive format emphasizing clean card borders, dark navy backdrop (`#0d233a`), and vertical demographic distribution.
+* **Layout Structure:**
+  - **Left Metric Panel:** No. of Patients (`1,000`), Total Bill Amt. (`$8,053,143`), Avg. Stay Length (`4.8` days), Paid Amount (`$4,568,527`), and Avg. Insurance (`75%`).
+  - **Dynamic Slicers:** Multi-select interactive slicers for `Department`, `Year` (2024 / 2025), and `Diagnosis`.
+  - **Top Visual Grid:** 24-Month Temporal Admission Trend Line Chart alongside Department Patient Volume (Horizontal Bar Chart).
+  - **Bottom Visual Grid:** Age Group Distribution (Vertical Column Chart: Btw 51 & 65: 235, 66 & Above: 232, Btw 36 & 50: 210, Btw 18 & 35: 170, Under 18: 153), Payment Status Breakdown (Donut Chart: 57% Paid, 26% Pending, 17% Partially Paid), and Patient Volume by Gender (Column Chart: 51% Female, 49% Male).
+
+---
+
+### 🎨 Dashboard Two: Icon-Enhanced Modern Layout (SecureHealth Performance Dashboard)
+![Dashboard Two - Icon-Enhanced Layout](./Dashboard_Two.png)
+
+* **Design Focus:** Modernized UI design featuring stylized healthcare iconography (hospital building logo, patient head avatar, coin stack, hospital bed, PAID stamp, and shield), paired with a compact dual-row visual grid.
+* **Layout Structure:**
+  - **Header Banner:** Prominent dark navy bar with institutional logo `(+++)` and hospital building icon.
+  - **Icon-Enriched KPI Cards:** Visual iconography embedded directly inside each KPI metric card for rapid cognitive scanning.
+  - **Top Visual Grid:** Admission Trend Over Time paired with a horizontal bar chart for Patients by Age Group.
+  - **Bottom Visual Grid:** No. of Patients by Dept. (Horizontal Bar Chart), Payment Status (%) Donut Chart, and Patient Gender (%) Column Chart.
+
+---
+
+### Key Dashboard Components & Metric Verification
 * **Executive Summary KPI Cards:**
-  - 💵 **Total Billed Revenue:** `$8,053,143.44` — Gross billing across all 1,000 patient visits.
-  - 💳 **Total Collected Cash:** `$5,269,442.16` — Actual cash recognized (under partial recovery) / `$4,568,527.32` fully paid.
-  - 👥 **Total Patient Visits:** `1,000` — Hospital-wide patient admission volume.
-  - 🛡️ **Average Insurance Coverage:** `74.86%` — Aggregate insurer contribution share.
-* **Interactive Slicers:** Allow dynamic cross-filtering by **Department**, **Year (2024 / 2025)**, and **Diagnosis**.
+  - 👥 **No. of Patients:** `1,000` — Total patient admissions recorded across 2024 and 2025.
+  - 💵 **Total Bill Amount:** `$8,053,143` (`$8,053,143.44` exact) — Gross billing across all encounters.
+  - ⏱️ **Avg. Stay Length:** `4.8` days (`4.81` days exact) — Overall hospital inpatient recovery duration.
+  - 💳 **Total Amount Paid:** `$4,568,527` (`$4,568,527.32` exact) — Direct cash collected from fully settled accounts.
+  - 🛡️ **Avg. Insurance Cov. (%):** `75%` (`74.86%` exact) — Mean insurer contribution rate.
+* **Interactive Slicers:** Allow dynamic multi-level cross-filtering by **Department**, **Year (2024 / 2025)**, and **Diagnosis**.
 * **Visual Analytical Modules:**
-  1. **Payment Status Breakdown (Donut/Pie Chart):** Clear visualization of account settlement shares.
-  2. **Department Performance (Visits & Revenue - Horizontal Bar Chart):** Compares patient headcount against gross billings.
-  3. **Insurance Coverage by Department (Column Chart):** Highlights reimbursement variations across clinical branches.
-  4. **Monthly Patient Admissions (Temporal Chart):** 24-month trend illustrating operational seasonality and peak admissions.
-  5. **Average Length of Stay by Department (Line Chart):** Inpatient bed recovery comparison across specialties.
-  6. **Patient Visits by Age Distribution (Column Chart):** Demographic concentration across life stages.
+  1. **Payment Status Breakdown (Donut Chart):** Visualizes account settlement shares (Paid 57%, Pending 26%, Partially Paid 17%).
+  2. **Department Performance (Horizontal Bar Chart):** Compares patient volume throughput across General (252), Emergency (190), Orthopedics (159), Pediatrics (153), Cardiology (152), and Neurology (94).
+  3. **Admission Trend Over Time (Temporal Line Chart):** 24-month trend illustrating operational seasonality and peak admissions (November 2025 peak: 57 admissions).
+  4. **Patients by Age Group (Bar/Column Chart):** Demographic concentration across life stages (Btw 51 & 65: 235, 66 & Above: 232, Btw 36 & 50: 210, Btw 18 & 35: 170, Under 18: 153).
+  5. **Patients by Gender (Column Chart):** Intake balance (Female 51% vs. Male 49%).
 
 ---
 
@@ -336,7 +358,9 @@ The project repository contains all files required by the course guidelines:
 ```
 DATA_ANALYTICS_PROJECT/
 ├── Hospital_Patients_Dataset.xlsx       # Primary Excel analytical model with 1,000 patient records
-├── Dashboard_Image.png                  # High-resolution screenshot of the built Excel performance dashboard
+├── Dashboard_One.png                    # Dashboard 1: Classic Executive Layout (Secure Life General Hospital)
+├── Dashboard_Two.png                    # Dashboard 2: Icon-Enhanced Modern Layout (SecureHealth Performance)
+├── Dashboard_Image.png                  # Primary high-resolution dashboard screenshot
 ├── Introductory_Image.jpg               # Healthcare team introductory visual
 ├── Introductory_Image.png               # High-resolution PNG format of introductory visual
 ├── GitHub_ReadMe_File.docx              # Comprehensive Microsoft Word documentation file
