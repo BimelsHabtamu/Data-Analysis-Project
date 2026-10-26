@@ -1,7 +1,7 @@
 # 🏥 SECURE HEALTH GENERAL HOSPITAL PERFORMANCE DASHBOARD
 ### *Executive Operational Efficiency, Clinical Throughput & Financial Revenue Analytics*
 
-![Hospital Healthcare Banner](./Introductory_Image.jpg)
+![Hospital Healthcare Banner](./Introductory_Image.png)
 
 [![Excel](https://img.shields.io/badge/Microsoft_Excel-Pivot_Tables_%26_Dashboards-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://products.office.com/excel)
 [![Status](https://img.shields.io/badge/Project_Status-Completed-success?style=for-the-badge)](https://github.com/BimelsHabtamu/Data-Analysis-Project)
@@ -360,9 +360,7 @@ DATA_ANALYTICS_PROJECT/
 ├── Hospital_Patients_Dataset.xlsx       # Primary Excel analytical model with 1,000 patient records
 ├── Dashboard_One.png                    # Dashboard 1: Classic Executive Layout (Secure Life General Hospital)
 ├── Dashboard_Two.png                    # Dashboard 2: Icon-Enhanced Modern Layout (SecureHealth Performance)
-├── Dashboard_Image.png                  # Primary high-resolution dashboard screenshot
-├── Introductory_Image.jpg               # Healthcare team introductory visual
-├── Introductory_Image.png               # High-resolution PNG format of introductory visual
+├── Introductory_Image.png               # Healthcare team introductory visual
 ├── GitHub_ReadMe_File.docx              # Comprehensive Microsoft Word documentation file
 └── README.md                            # Complete GitHub project documentation & analytical portfolio report
 ```
